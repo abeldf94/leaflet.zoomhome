@@ -1,5 +1,15 @@
 # Leaflet.zoomhome
 
+### This fork is used to add support for AMD/Common JS and publish into npm packages
+* Usage:
+``` js
+    import 'leaflet.zoomhome/leaflet.zoomhome';
+    import 'leaflet.zoomhome/leaflet.zoomhome.css';
+    ...
+    L.Control.zoomHome().addTo(map);
+    ...
+```
+
 [![Travis CI badge](https://api.travis-ci.org/torfsen/leaflet.zoomhome.svg?branch=master)](https://travis-ci.org/torfsen/leaflet.zoomhome)
 
 A [Leaflet](http://leafletjs.com/)-plugin that provides a zoom control with a

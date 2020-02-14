@@ -7,11 +7,15 @@
  * Based on code by toms (https://gis.stackexchange.com/a/127383/48264).
  */
 (function(L) {
-    if ("function" == typeof define && define.amd) define(["leaflet"], L);
-    else if ("undefined" != typeof module) module.exports = a(require("leaflet"));
-    else {
-        if ("undefined" == typeof this.L) throw "Leaflet must be loaded first!";
-        L(this.L)
+    if ("function" === typeof define && define.amd){
+        define(["leaflet"], L);
+    } else if ("undefined" !== typeof module) {
+        module.exports = a(require("leaflet"));
+    } else {
+        if ("undefined" === typeof this.L) {
+            throw "Leaflet must be loaded first!";
+        }
+        L(this.L);
     }
   })(function(L) {
     L.Control.ZoomHome = L.Control.Zoom.extend({
@@ -92,7 +96,9 @@
           this._map.setView(this.options.homeCoordinates, this.options.homeZoom);
       }
   
-    }), L.Control.zoomHome = function(options) {
-      return new L.Control.ZoomHome(options)
+    });
+    
+    L.Control.zoomHome = function(options) {
+      return new L.Control.ZoomHome(options);
     }
   });
