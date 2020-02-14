@@ -10,5 +10,9 @@
     "mocha": "4.0.1",
     "puppeteer": "0.13.0",
     "test-all-versions": "3.3.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "grunt"
   }
 }
