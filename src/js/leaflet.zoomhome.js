@@ -10,7 +10,7 @@
     if ("function" === typeof define && define.amd){
         define(["leaflet"], L);
     } else if ("undefined" !== typeof module) {
-        module.exports = a(require("leaflet"));
+        module.exports = L(require("leaflet"));
     } else {
         if ("undefined" === typeof this.L) {
             throw "Leaflet must be loaded first!";
@@ -100,5 +100,5 @@
     
     L.Control.zoomHome = function(options) {
       return new L.Control.ZoomHome(options);
-    }
+    };
   });

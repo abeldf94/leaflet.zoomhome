@@ -1,7 +1,4 @@
 module.exports = function(grunt) {
-    "use strict";
-
-    var pkg = grunt.file.readJSON('bower.json');
 
     grunt.initConfig({
         pkg: pkg,
@@ -27,7 +24,10 @@ module.exports = function(grunt) {
                 eqeqeq: true,
                 forin: true,
                 globals: {
-                    L: false
+                    L: false,
+                    define: false,
+                    module: false,
+                    require: false
                 },
                 latedef: 'nofunc',
                 undef: true,
