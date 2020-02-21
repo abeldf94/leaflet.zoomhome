@@ -93,6 +93,7 @@ import '../css/leaflet.zoomhome.css'; // For webpack
       },
   
       _zoomHome: function (e) {
+          this._map.closePopup();
           this._map.setView(this.options.homeCoordinates, this.options.homeZoom);
       }
   
