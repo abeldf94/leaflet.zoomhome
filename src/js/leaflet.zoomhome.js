@@ -1,3 +1,4 @@
+import '../css/leaflet.zoomhome.css'; // For webpack
 /*
  * Leaflet zoom control with a home button for resetting the view.
  *
@@ -92,7 +93,6 @@
       },
   
       _zoomHome: function (e) {
-          //jshint unused:false
           this._map.setView(this.options.homeCoordinates, this.options.homeZoom);
       }
   

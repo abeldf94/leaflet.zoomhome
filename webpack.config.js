@@ -2,11 +2,14 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    entry: './src/leaflet.zoomhome.js',
+    mode: 'production',
+    entry: './src/js/leaflet.zoomhome.js',
     output: {
-        filename: 'leaflet.zoomhome.js',
+        filename: 'leaflet.zoomhome.min.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    externals: {
+        "leaflet": "Leaflet",
     },
     module: {
         rules: [
