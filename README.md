@@ -3,14 +3,12 @@
 ### This fork is used to add support for AMD/Common JS and publish into npm packages
 * Usage:
 ``` js
-    import 'leaflet.zoomhome/leaflet.zoomhome';
-    import 'leaflet.zoomhome/leaflet.zoomhome.css';
+    import 'leaflet.zoomhome/dist/leaflet.zoomhome.min.js';
     ...
     L.Control.zoomHome().addTo(map);
     ...
 ```
 
-[![Travis CI badge](https://api.travis-ci.org/torfsen/leaflet.zoomhome.svg?branch=master)](https://travis-ci.org/torfsen/leaflet.zoomhome)
 
 A [Leaflet](http://leafletjs.com/)-plugin that provides a zoom control with a
 "Home" button to reset the view.
@@ -37,9 +35,9 @@ including the plugin):
 <script src="leaflet.zoomhome.min.js"></script>
 ```
 
-Alternatively, you can install the plugin via [Bower](http://bower.io):
+Alternatively, you can install the plugin via NPM:
 
-    bower install leaflet.zoomhome --save
+    npm install leaflet.zoomhome
 
 When you create your map, pass `{zoomControl: false}` to disable the standard
 zoom control:
@@ -119,10 +117,3 @@ licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
 ## Development
 
 Install all requirements using `npm install`.
-
-The tests can be run via `grunt test` (test against the currently installed Leaflet version) or via `grunt test-all` (test against all supported Leaflet versions).
-
-Linting can be done via `grunt jshint`, and `grunt uglify` updates the minified JS file.
-
-`grunt` on its own is equivalent to running the `jshint`, `test-all` and `uglify` tasks.
-
