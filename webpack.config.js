@@ -9,7 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     externals: {
-        "leaflet": "Leaflet",
+        "leaflet": "L",
     },
     module: {
         rules: [

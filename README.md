@@ -9,12 +9,11 @@
     ...
 ```
 
-
 A [Leaflet](http://leafletjs.com/)-plugin that provides a zoom control with a
 "Home" button to reset the view.
 
-[Demo](https://torfsen.github.io/leaflet.zoomhome/)
-
+[Demo](https://abeldf94.github.io/Leaflet.zoomHome/example/)
+Forked from [torfsen/leaflet.zoomhome](https://github.com/torfsen/leaflet.zoomhome)
 
 ## Usage
 
