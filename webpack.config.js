@@ -5,7 +5,7 @@ module.exports = {
     mode: 'production',
     entry: './src/js/leaflet.zoomhome.js',
     output: {
-        filename: 'leaflet.zoomhome.min.js',
+        filename: 'leaflet.zoomhome.js',
         path: path.resolve(__dirname, 'dist')
     },
     externals: {
